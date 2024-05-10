@@ -1,10 +1,7 @@
 import './globals.css'
-import { Rubik } from 'next/font/google'
 
 // components
 import NavBar from './components/NavBar'
-
-const rubik = Rubik({ subsets: ['rubik'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body>
         <NavBar/>
         {children}
       </body>
